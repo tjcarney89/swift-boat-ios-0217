@@ -14,7 +14,6 @@
 		4D7E0DC91C05005A00A15C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E0DC71C05005A00A15C54 /* LaunchScreen.storyboard */; };
 		4D7E0DD41C05005B00A15C54 /* swift_boatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DD31C05005B00A15C54 /* swift_boatTests.swift */; };
 		4D7E0DE21C0501B800A15C54 /* BoatSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DE11C0501B800A15C54 /* BoatSpec.swift */; };
-		F09FA3243E677061B1DFED0A /* Pods_swift_boatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_boatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7E0DBB1C05005A00A15C54 /* swift-boat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-boat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7E0DBE1C05005A00A15C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D7E0DC01C05005A00A15C54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +38,6 @@
 		4D7E0DD31C05005B00A15C54 /* swift_boatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_boatTests.swift; sourceTree = "<group>"; };
 		4D7E0DD51C05005B00A15C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7E0DE11C0501B800A15C54 /* BoatSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoatSpec.swift; sourceTree = "<group>"; };
-		655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-boatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests.release.xcconfig"; sourceTree = "<group>"; };
-		843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-boatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,30 +52,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09FA3243E677061B1DFED0A /* Pods_swift_boatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46902F2B05B0C277B2CBB381 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */,
-				655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4D7E0DB21C05005A00A15C54 = {
 			isa = PBXGroup;
 			children = (
 				4D7E0DBD1C05005A00A15C54 /* swift-boat */,
 				4D7E0DD21C05005B00A15C54 /* swift-boatTests */,
 				4D7E0DBC1C05005A00A15C54 /* Products */,
-				46902F2B05B0C277B2CBB381 /* Pods */,
-				983E19686DC30A005BDEA258 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,14 +107,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		983E19686DC30A005BDEA258 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,12 +131,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D7E0DDB1C05005B00A15C54 /* Build configuration list for PBXNativeTarget "swift-boatTests" */;
 			buildPhases = (
-				B27451F6C0DA22CB8C6E2032 /* Check Pods Manifest.lock */,
 				4D7E0DCB1C05005B00A15C54 /* Sources */,
 				4D7E0DCC1C05005B00A15C54 /* Frameworks */,
 				4D7E0DCD1C05005B00A15C54 /* Resources */,
-				CA39DE32E06B1C86889B41E8 /* Embed Pods Frameworks */,
-				D1BC5A5012F0F3121D291080 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,9 +157,12 @@
 				TargetAttributes = {
 					4D7E0DBA1C05005A00A15C54 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = WNAGBXF4G9;
+						LastSwiftMigration = 0800;
 					};
 					4D7E0DCE1C05005B00A15C54 = {
 						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 4D7E0DBA1C05005A00A15C54;
 					};
 				};
@@ -229,54 +205,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B27451F6C0DA22CB8C6E2032 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CA39DE32E06B1C86889B41E8 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1BC5A5012F0F3121D291080 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D7E0DB71C05005A00A15C54 /* Sources */ = {
@@ -412,10 +340,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
 				INFOPLIST_FILE = "swift-boat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -423,35 +353,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNAGBXF4G9;
 				INFOPLIST_FILE = "swift-boat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		4D7E0DDC1C05005B00A15C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-boatTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat";
 			};
 			name = Debug;
 		};
 		4D7E0DDD1C05005B00A15C54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "swift-boatTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boatTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat";
 			};
 			name = Release;

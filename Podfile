@@ -13,6 +13,6 @@ target 'swift-boat' do
 end
 
 target 'swift-boatTests' do
-  testing_pods
+  #testing_pods
 end
 

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "7c27b1b4c2494c69cf01b143e07ad53b"
+build_time: [527176925, 226704000]
+inputs:
+  "/Users/flatironschool/Documents/labs/swift-boat/Sources/swift_boat.swift": [527176866, 0]

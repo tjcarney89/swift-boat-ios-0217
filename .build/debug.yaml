@@ -1,0 +1,47 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<swift-boat.module>","<swift-boatTests.module>","<swift-boatPackageTests.test>"]
+  "main": ["<swift-boat.module>"]
+default: "main"
+commands: 
+  "<swift-boat.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "swift_boat"
+    module-output-path: "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.swiftmodule"
+    inputs: []
+    outputs: ["<swift-boat.module>","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swift.o"]
+    import-paths: ["/Users/flatironschool/Documents/labs/swift-boat/.build/debug"]
+    temps-path: "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build"
+    objects: ["/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/ModuleCache"]
+    sources: ["/Users/flatironschool/Documents/labs/swift-boat/Sources/swift_boat.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<swift-boatTests.module>":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "swift_boatTests"
+    module-output-path: "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.swiftmodule"
+    inputs: ["<swift-boat.module>"]
+    outputs: ["<swift-boatTests.module>","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.build/swift_boatTests.swift.o"]
+    import-paths: ["/Users/flatironschool/Documents/labs/swift-boat/.build/debug"]
+    temps-path: "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.build"
+    objects: ["/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.build/swift_boatTests.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-module-cache-path","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/ModuleCache"]
+    sources: ["/Users/flatironschool/Documents/labs/swift-boat/Tests/swift-boatTests/swift_boatTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<swift-boatPackageTests.test>":
+    tool: shell
+    description: "Linking ./.build/debug/swift-boatPackageTests.xctest/Contents/MacOS/swift-boatPackageTests"
+    inputs: ["/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.build/swift_boatTests.swift.o","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swift.o"]
+    outputs: ["<swift-boatPackageTests.test>","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift-boatPackageTests.xctest/Contents/MacOS/swift-boatPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk","-g","-L/Users/flatironschool/Documents/labs/swift-boat/.build/debug","-o","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift-boatPackageTests.xctest/Contents/MacOS/swift-boatPackageTests","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-module-name","swift-boatPackageTests","-Xlinker","-bundle","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boatTests.build/swift_boatTests.swift.o","/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swift.o"]
+

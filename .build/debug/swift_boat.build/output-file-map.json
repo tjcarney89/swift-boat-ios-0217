@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/master.swiftdeps"
+  },
+  "/Users/flatironschool/Documents/labs/swift-boat/Sources/swift_boat.swift": {
+    "dependencies": "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.d",
+    "object": "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swift.o",
+    "swiftmodule": "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat~partial.swiftmodule",
+    "swift-dependencies": "/Users/flatironschool/Documents/labs/swift-boat/.build/debug/swift_boat.build/swift_boat.swiftdeps"
+  }
+}
