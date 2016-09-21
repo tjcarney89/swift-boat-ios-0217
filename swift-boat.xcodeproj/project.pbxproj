@@ -1,496 +1,818 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		4D7E0DBF1C05005A00A15C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DBE1C05005A00A15C54 /* AppDelegate.swift */; };
-		4D7E0DC11C05005A00A15C54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DC01C05005A00A15C54 /* ViewController.swift */; };
-		4D7E0DC41C05005A00A15C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E0DC21C05005A00A15C54 /* Main.storyboard */; };
-		4D7E0DC61C05005A00A15C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E0DC51C05005A00A15C54 /* Assets.xcassets */; };
-		4D7E0DC91C05005A00A15C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E0DC71C05005A00A15C54 /* LaunchScreen.storyboard */; };
-		4D7E0DD41C05005B00A15C54 /* swift_boatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DD31C05005B00A15C54 /* swift_boatTests.swift */; };
-		4D7E0DE01C05018800A15C54 /* Boat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DDF1C05018800A15C54 /* Boat.swift */; };
-		4D7E0DE21C0501B800A15C54 /* BoatSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E0DE11C0501B800A15C54 /* BoatSpec.swift */; };
-		F09FA3243E677061B1DFED0A /* Pods_swift_boatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4D7E0DD01C05005B00A15C54 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D7E0DB31C05005A00A15C54 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D7E0DBA1C05005A00A15C54;
-			remoteInfo = "swift-boat";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_boatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7E0DBB1C05005A00A15C54 /* swift-boat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-boat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7E0DBE1C05005A00A15C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D7E0DC01C05005A00A15C54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D7E0DC31C05005A00A15C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4D7E0DC51C05005A00A15C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4D7E0DC81C05005A00A15C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4D7E0DCA1C05005A00A15C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D7E0DCF1C05005B00A15C54 /* swift-boatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-boatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7E0DD31C05005B00A15C54 /* swift_boatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_boatTests.swift; sourceTree = "<group>"; };
-		4D7E0DD51C05005B00A15C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D7E0DDF1C05018800A15C54 /* Boat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boat.swift; sourceTree = "<group>"; };
-		4D7E0DE11C0501B800A15C54 /* BoatSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoatSpec.swift; sourceTree = "<group>"; };
-		655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-boatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests.release.xcconfig"; sourceTree = "<group>"; };
-		843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-boatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests.debug.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		4D7E0DB81C05005A00A15C54 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D7E0DCC1C05005B00A15C54 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F09FA3243E677061B1DFED0A /* Pods_swift_boatTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		46902F2B05B0C277B2CBB381 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */,
-				655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4D7E0DB21C05005A00A15C54 = {
-			isa = PBXGroup;
-			children = (
-				4D7E0DBD1C05005A00A15C54 /* swift-boat */,
-				4D7E0DD21C05005B00A15C54 /* swift-boatTests */,
-				4D7E0DBC1C05005A00A15C54 /* Products */,
-				46902F2B05B0C277B2CBB381 /* Pods */,
-				983E19686DC30A005BDEA258 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		4D7E0DBC1C05005A00A15C54 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D7E0DBB1C05005A00A15C54 /* swift-boat.app */,
-				4D7E0DCF1C05005B00A15C54 /* swift-boatTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4D7E0DBD1C05005A00A15C54 /* swift-boat */ = {
-			isa = PBXGroup;
-			children = (
-				4D7E0DBE1C05005A00A15C54 /* AppDelegate.swift */,
-				4D7E0DDF1C05018800A15C54 /* Boat.swift */,
-				4D7E0DDE1C05016E00A15C54 /* Resources */,
-			);
-			path = "swift-boat";
-			sourceTree = "<group>";
-		};
-		4D7E0DD21C05005B00A15C54 /* swift-boatTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D7E0DE11C0501B800A15C54 /* BoatSpec.swift */,
-				4D7E0DD31C05005B00A15C54 /* swift_boatTests.swift */,
-				4D7E0DD51C05005B00A15C54 /* Info.plist */,
-			);
-			path = "swift-boatTests";
-			sourceTree = "<group>";
-		};
-		4D7E0DDE1C05016E00A15C54 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4D7E0DC01C05005A00A15C54 /* ViewController.swift */,
-				4D7E0DC21C05005A00A15C54 /* Main.storyboard */,
-				4D7E0DC51C05005A00A15C54 /* Assets.xcassets */,
-				4D7E0DC71C05005A00A15C54 /* LaunchScreen.storyboard */,
-				4D7E0DCA1C05005A00A15C54 /* Info.plist */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		983E19686DC30A005BDEA258 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A1743229EDDB9616EBBD737 /* Pods_swift_boatTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		4D7E0DBA1C05005A00A15C54 /* swift-boat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D7E0DD81C05005B00A15C54 /* Build configuration list for PBXNativeTarget "swift-boat" */;
-			buildPhases = (
-				4D7E0DB71C05005A00A15C54 /* Sources */,
-				4D7E0DB81C05005A00A15C54 /* Frameworks */,
-				4D7E0DB91C05005A00A15C54 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "swift-boat";
-			productName = "swift-boat";
-			productReference = 4D7E0DBB1C05005A00A15C54 /* swift-boat.app */;
-			productType = "com.apple.product-type.application";
-		};
-		4D7E0DCE1C05005B00A15C54 /* swift-boatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D7E0DDB1C05005B00A15C54 /* Build configuration list for PBXNativeTarget "swift-boatTests" */;
-			buildPhases = (
-				B27451F6C0DA22CB8C6E2032 /* Check Pods Manifest.lock */,
-				4D7E0DCB1C05005B00A15C54 /* Sources */,
-				4D7E0DCC1C05005B00A15C54 /* Frameworks */,
-				4D7E0DCD1C05005B00A15C54 /* Resources */,
-				CA39DE32E06B1C86889B41E8 /* Embed Pods Frameworks */,
-				D1BC5A5012F0F3121D291080 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D7E0DD11C05005B00A15C54 /* PBXTargetDependency */,
-			);
-			name = "swift-boatTests";
-			productName = "swift-boatTests";
-			productReference = 4D7E0DCF1C05005B00A15C54 /* swift-boatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		4D7E0DB31C05005A00A15C54 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "Flatiron School";
-				TargetAttributes = {
-					4D7E0DBA1C05005A00A15C54 = {
-						CreatedOnToolsVersion = 7.1;
-					};
-					4D7E0DCE1C05005B00A15C54 = {
-						CreatedOnToolsVersion = 7.1;
-						TestTargetID = 4D7E0DBA1C05005A00A15C54;
-					};
-				};
-			};
-			buildConfigurationList = 4D7E0DB61C05005A00A15C54 /* Build configuration list for PBXProject "swift-boat" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 4D7E0DB21C05005A00A15C54;
-			productRefGroup = 4D7E0DBC1C05005A00A15C54 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				4D7E0DBA1C05005A00A15C54 /* swift-boat */,
-				4D7E0DCE1C05005B00A15C54 /* swift-boatTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4D7E0DB91C05005A00A15C54 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D7E0DC91C05005A00A15C54 /* LaunchScreen.storyboard in Resources */,
-				4D7E0DC61C05005A00A15C54 /* Assets.xcassets in Resources */,
-				4D7E0DC41C05005A00A15C54 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D7E0DCD1C05005B00A15C54 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B27451F6C0DA22CB8C6E2032 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CA39DE32E06B1C86889B41E8 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1BC5A5012F0F3121D291080 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-boatTests/Pods-swift-boatTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		4D7E0DB71C05005A00A15C54 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D7E0DE01C05018800A15C54 /* Boat.swift in Sources */,
-				4D7E0DC11C05005A00A15C54 /* ViewController.swift in Sources */,
-				4D7E0DBF1C05005A00A15C54 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D7E0DCB1C05005B00A15C54 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D7E0DE21C0501B800A15C54 /* BoatSpec.swift in Sources */,
-				4D7E0DD41C05005B00A15C54 /* swift_boatTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4D7E0DD11C05005B00A15C54 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D7E0DBA1C05005A00A15C54 /* swift-boat */;
-			targetProxy = 4D7E0DD01C05005B00A15C54 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4D7E0DC21C05005A00A15C54 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D7E0DC31C05005A00A15C54 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4D7E0DC71C05005A00A15C54 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D7E0DC81C05005A00A15C54 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		4D7E0DD61C05005B00A15C54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		4D7E0DD71C05005B00A15C54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4D7E0DD91C05005B00A15C54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "swift-boat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4D7E0DDA1C05005B00A15C54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "swift-boat/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		4D7E0DDC1C05005B00A15C54 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 843645AF02FDAAFFF3F66122 /* Pods-swift-boatTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-boatTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boatTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat";
-			};
-			name = Debug;
-		};
-		4D7E0DDD1C05005B00A15C54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655C0C02EA6CFA96674F2876 /* Pods-swift-boatTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "swift-boatTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flatironschool.swift-boatTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		4D7E0DB61C05005A00A15C54 /* Build configuration list for PBXProject "swift-boat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D7E0DD61C05005B00A15C54 /* Debug */,
-				4D7E0DD71C05005B00A15C54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D7E0DD81C05005B00A15C54 /* Build configuration list for PBXNativeTarget "swift-boat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D7E0DD91C05005B00A15C54 /* Debug */,
-				4D7E0DDA1C05005B00A15C54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D7E0DDB1C05005B00A15C54 /* Build configuration list for PBXNativeTarget "swift-boatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D7E0DDC1C05005B00A15C54 /* Debug */,
-				4D7E0DDD1C05005B00A15C54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 4D7E0DB31C05005A00A15C54 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>4D7E0DB21C05005A00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DBD1C05005A00A15C54</string>
+				<string>4D7E0DD21C05005B00A15C54</string>
+				<string>4D7E0DBC1C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DB31C05005A00A15C54</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0710</string>
+				<key>LastUpgradeCheck</key>
+				<string>0710</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Flatiron School</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>4D7E0DBA1C05005A00A15C54</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+					</dict>
+					<key>4D7E0DCE1C05005B00A15C54</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.1</string>
+						<key>LastSwiftMigration</key>
+						<string>0800</string>
+						<key>TestTargetID</key>
+						<string>4D7E0DBA1C05005A00A15C54</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>4D7E0DB61C05005A00A15C54</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>4D7E0DB21C05005A00A15C54</string>
+			<key>productRefGroup</key>
+			<string>4D7E0DBC1C05005A00A15C54</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>4D7E0DBA1C05005A00A15C54</string>
+				<string>4D7E0DCE1C05005B00A15C54</string>
+			</array>
+		</dict>
+		<key>4D7E0DB61C05005A00A15C54</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4D7E0DD61C05005B00A15C54</string>
+				<string>4D7E0DD71C05005B00A15C54</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4D7E0DB71C05005A00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4D7E0DE01C05018800A15C54</string>
+				<string>4D7E0DC11C05005A00A15C54</string>
+				<string>4D7E0DBF1C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DB81C05005A00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DB91C05005A00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4D7E0DC91C05005A00A15C54</string>
+				<string>4D7E0DC61C05005A00A15C54</string>
+				<string>4D7E0DC41C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DBA1C05005A00A15C54</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4D7E0DD81C05005B00A15C54</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4D7E0DB71C05005A00A15C54</string>
+				<string>4D7E0DB81C05005A00A15C54</string>
+				<string>4D7E0DB91C05005A00A15C54</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>swift-boat</string>
+			<key>productName</key>
+			<string>swift-boat</string>
+			<key>productReference</key>
+			<string>4D7E0DBB1C05005A00A15C54</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>4D7E0DBB1C05005A00A15C54</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>swift-boat.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4D7E0DBC1C05005A00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DBB1C05005A00A15C54</string>
+				<string>4D7E0DCF1C05005B00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DBD1C05005A00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DBE1C05005A00A15C54</string>
+				<string>4D7E0DDF1C05018800A15C54</string>
+				<string>4D7E0DDE1C05016E00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>swift-boat</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DBE1C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DBF1C05005A00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DBE1C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DC01C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC11C05005A00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DC01C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DC21C05005A00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DC31C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC31C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC41C05005A00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DC21C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DC51C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC61C05005A00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DC51C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DC71C05005A00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DC81C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC81C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DC91C05005A00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DC71C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DCA1C05005A00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DCB1C05005B00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4D7E0DE21C0501B800A15C54</string>
+				<string>4D7E0DD41C05005B00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DCC1C05005B00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DCD1C05005B00A15C54</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D7E0DCE1C05005B00A15C54</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4D7E0DDB1C05005B00A15C54</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4D7E0DCB1C05005B00A15C54</string>
+				<string>4D7E0DCC1C05005B00A15C54</string>
+				<string>4D7E0DCD1C05005B00A15C54</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>4D7E0DD11C05005B00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>swift-boatTests</string>
+			<key>productName</key>
+			<string>swift-boatTests</string>
+			<key>productReference</key>
+			<string>4D7E0DCF1C05005B00A15C54</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>4D7E0DCF1C05005B00A15C54</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>swift-boatTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4D7E0DD01C05005B00A15C54</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>4D7E0DB31C05005A00A15C54</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4D7E0DBA1C05005A00A15C54</string>
+			<key>remoteInfo</key>
+			<string>swift-boat</string>
+		</dict>
+		<key>4D7E0DD11C05005B00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>4D7E0DBA1C05005A00A15C54</string>
+			<key>targetProxy</key>
+			<string>4D7E0DD01C05005B00A15C54</string>
+		</dict>
+		<key>4D7E0DD21C05005B00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DE11C0501B800A15C54</string>
+				<string>4D7E0DD31C05005B00A15C54</string>
+				<string>4D7E0DD51C05005B00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>swift-boatTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DD31C05005B00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>swift_boatTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DD41C05005B00A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DD31C05005B00A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DD51C05005B00A15C54</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DD61C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4D7E0DD71C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4D7E0DD81C05005B00A15C54</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4D7E0DD91C05005B00A15C54</string>
+				<string>4D7E0DDA1C05005B00A15C54</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4D7E0DD91C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>swift-boat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.flatironschool.swift-boat</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4D7E0DDA1C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>swift-boat/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.flatironschool.swift-boat</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4D7E0DDB1C05005B00A15C54</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4D7E0DDC1C05005B00A15C54</string>
+				<string>4D7E0DDD1C05005B00A15C54</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4D7E0DDC1C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>swift-boatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.flatironschool.swift-boatTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4D7E0DDD1C05005B00A15C54</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>swift-boatTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.flatironschool.swift-boatTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_VERSION</key>
+				<string>3.0</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/swift-boat.app/swift-boat</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4D7E0DDE1C05016E00A15C54</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4D7E0DC01C05005A00A15C54</string>
+				<string>4D7E0DC21C05005A00A15C54</string>
+				<string>4D7E0DC51C05005A00A15C54</string>
+				<string>4D7E0DC71C05005A00A15C54</string>
+				<string>4D7E0DCA1C05005A00A15C54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DDF1C05018800A15C54</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Boat.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DE01C05018800A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DDF1C05018800A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4D7E0DE11C0501B800A15C54</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BoatSpec.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D7E0DE21C0501B800A15C54</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D7E0DE11C0501B800A15C54</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>4D7E0DB31C05005A00A15C54</string>
+</dict>
+</plist>
