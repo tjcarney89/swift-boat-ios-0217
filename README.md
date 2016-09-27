@@ -9,7 +9,7 @@
 
 ## Instructions
 
-Open the `swift-boat.xcworkspace` file.
+Open the `swift-boat` project file.
 
 1. Create a new Swift file titled `Boat.swift` to hold a new class.
 
