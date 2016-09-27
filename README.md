@@ -9,7 +9,7 @@
 
 ## Instructions
 
-Open the `swift-boat` project file.
+Open the `swift-boat.xcodeproj` project file.
 
 1. Create a new Swift file titled `Boat.swift` to hold a new class.
 
@@ -27,3 +27,5 @@ Open the `swift-boat` project file.
 
 <a href='https://learn.co/lessons/swift-boat' data-visibility='hidden'>View this lesson on Learn.co</a>
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-boat'>Boat</a> on Learn.co and start learning to code for free.</p>
